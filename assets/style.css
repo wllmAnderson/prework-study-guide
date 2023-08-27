@@ -1,8 +1,9 @@
+/* the * is an universal selector */
 * {
     margin: 0;
     padding: 0;
 }
-
+/* footer is the selector: the HTML element you wannt to style */
 header,
 footer {
     width: 100%;
@@ -10,18 +11,22 @@ footer {
     background-color: blue;
     color: white;
 }
-
+/* The declaration is within the {} and contains a property and value*/
 h1,
 h2 {
     text-align: center;
 }
-
+/* The property is display, height ect. and the value would be block or 50xp*/
 img {
     display: block;
     height: 50px;
     width: 50px;
     margin-left: auto;
     margin-right: auto;
+}
+/* The # is used to select an ID*/
+#css-section {
+    color: blue;
 }
 
 ul {
@@ -31,8 +36,9 @@ ul {
 
 p {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
+  /* . is used to select a class*/
   .card {
     width: 80%;
     margin: 40px auto;

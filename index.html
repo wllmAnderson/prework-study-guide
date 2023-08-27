@@ -1,36 +1,138 @@
+<!--The !DOCTYPE html declaration defines that this document is an HTML5 document-->
 <!DOCTYPE html>
+<!--The html element is the root element of an HTML page-->
 <html lang="en">
+  <!--The head element contains meta information about the HTML page-->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--This how you link a css file to your html file-->
     <link rel="stylesheet" href="./assets/style.css">
+    <!--The title element specifies a title for the HTML page 
+      (which is shown in the browser's title bar or in the page's tab)-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Prework Study Guide</title>
+    <style>
+      #intro {
+        color: black;
+      }
+    </style>
   </head>
+  <!--The body element defines the document's body, and is a container for all the visible contents, 
+    such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
   <body>
-    <header id="top">
+    <header class="card-header">
+      <!--Headings going from 1 to 6 decrease and increase the size of the headers.  
+        Useful in creating section headers in a document-->
       <h1>Prework Study Guide</h1>
+      <!--Attributes prove additional information about a elements. 
+        For example the height and width of an image, or the URL of a link,
+      or src providing the source of the image-->
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
       <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
 
     <main>
+      <!--the section tag defines a section of a document-->
+      <section class="card" id="intro">
+        <h1>Introduction</h1>
+        <p>
+          Frontend development, often referred to as "client-side development", encompasses the creation and design of the parts of a website or web application that users see and interact with. This study guide focuses on four foundational pillars of frontend development: HTML (HyperText Markup Language), which structures the content of the web; CSS (Cascading Style Sheets), responsible for styling and layout; JavaScript, the programming language that introduces interactivity and dynamic functionality to web pages; and ReactJS, a powerful JavaScript library used for building user interfaces in a modular and efficient manner. Together, these elements provide aspiring frontend developers with the tools necessary to craft compelling, interactive, and responsive user experiences. The mastery of HTML, CSS, JavaScript, and ReactJS is essential for anyone seeking proficiency in modern frontend web development.
+        </p>
+      </section>
       <section class="card" id="html-section">
-        <h2>HTML</h2>
+        <h2>HTML: Hypertext Markup Language</h2>
+        <p>
+          HTML, or HyperText Markup Language, is the foundational building block of the World Wide Web. It provides the structural framework for web content, allowing developers to create and organize text, images, links, forms, and other elements in a coherent layout. The key components of HTML include elements, represented by tags (e.g., h1, p, a), attributes that provide additional information about these elements (e.g., href for links, src for images), and the Document Object Model (DOM) which represents the structure of an HTML document in a tree-like format. As you delve deeper into web development, understanding the intricacies of HTML becomes paramount because, at its core, every web page is an HTML document. Grasping the fundamentals of HTML is the first step to becoming proficient in web design and development.
+        </p>
+        <h3 class="text-center">
+          An HTML file follows a structured and hierarchical format that dictates how content is organized and displayed in web browsers. Here's a breakdown of the standard structure:
+        </h3>
+          <ul>
+            <li>
+              Document Declaration (!DOCTYPE): This declaration defines the version of HTML. For HTML5, you'll commonly see <!DOCTYPE html> at the very beginning of the document.
+            </li>
+            <li>
+              HTML Element (<html>): This is the root element and wraps all the content of the entire document. It typically has a lang attribute indicating the language of the document, for example, lang="en" for English.
+            </li>
+            <li>
+              Head Element (<head>): This section contains meta-information about the document, links to stylesheets, scripts, and other resources. Notably, it houses:
+                <li>
+                  meta tags: Provide metadata such as character set (e.g., meta charset="UTF-8").
+                </li>
+                <li>
+                  title tag: Specifies the title of the web page, which appears in the browser's title bar or tab.
+                </li>
+                <li>
+                  link tags: Used to connect to external resources, like CSS stylesheets.
+                </li> 
+                <li>
+                  script tags: Though scripts can be placed in various parts of an HTML document, linking or placing JavaScript before the closing
+                </li>
+                the head tag is common for scripts that don't need to wait for the full page load.
+              </li>
+            <li>
+              Body Element (body): This is the main content area where the visible elements of the web page are placed. It can contain various structural and textual elements such as:
+              <li>
+                Headers (h1, h2,...h6): These represent headings, with h1 being the highest (or most important) level.
+                Paragraphs (p): Contain blocks of text.
+              </li>
+              <li>
+                Links (a): Used for navigation.
+              </li>
+              <li>
+                Lists (ordered ol and unordered ul): Group items (li) together.
+              </li>
+              <li>
+                Images (img): Display graphics on a web page. 
+              </li>
+            </li>
+          </ul>
+          <p>
+            In essence, an HTML file is organized into two main sections: the head containing the metadata and the body which holds the content users see and interact with. Understanding this fundamental structure is pivotal for creating well-organized and functional web pages.
+          </p>
         <ul>
+          <li>HTML is the standard markup language for creating Web pages</li>
+          <li>HTML describes the structure of a Web page</li>
+          <li>HTML consists of a series of elements</li>
+          <li>HTML elements tell the browser how to display the content</li>
+          <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+          </li>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user</li>
         </ul>
-      </section>
-      <section class="card" id="css-section">
-        <h2>CSS</h2>
+        <h3>Elements: An HTML element is defined by a start tag, some content, and an end tag</h3>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>The !DOCTYPE html declaration defines that this document is an HTML5 document
+          </li>
+          <li>The html element is the root element of an HTML page
+          </li>
+          <li>The head element contains meta information about the HTML page
+          </li>
+          <li>The title element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+          </li>
+          <li>The body element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+          </li>
+          <li>The h1 element defines a large heading
+          </li>
+          <li>The p element defines a paragraph
+          </li>
         </ul>
+        <h3>HTML Attributes</h3>
+          <ul>
+            <p>In HTML, elements often come paired with attributes, which provide additional information about the properties or behavior of those elements. Attributes are always specified in the opening tag of an element and are defined using a name-value pair structure. For instance, in the link element &lta href="https://www.example.com"&gtVisit Example&lt/a&gt <a href="https://www.example.com">Visit Example</a>, href is an attribute that specifies the destination URL, and "https://www.example.com" is its value. There are numerous attributes in HTML; for example, the src attribute in the &ltimg&gt tag indicates the source path of an image, while the alt attribute provides a textual alternative for that image. The class and id attributes are particularly important for styling and scripting purposes, as they help identify specific elements or groups of elements. While many attributes are universal and can be used on any element, some are element-specific. Attributes, in essence, enhance the versatility and specificity of HTML elements, allowing developers to customize content presentation and behavior.</p>
+          </ul>
+          <a href="./html.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">HTML Study Guide</a>
 
       </section>
-
+      <!-- class is a selector that can be used by multible elements-->
+      <section class="card" id="css-section">
+        <h2>CSS: Cascading Style Sheets</h2>
+          <p>CSS, which stands for Cascading Style Sheets, plays an indispensable role in frontend development by providing the aesthetic and layout dimensions to the structured content of HTML. While HTML lays the foundational structure of web pages, CSS breathes life into this structure, enabling the customization of colors, fonts, spacing, positioning, and responsiveness, among other visual attributes. It allows developers to create web pages that are not only functional but also visually captivating, ensuring that user interfaces are intuitive, engaging, and adaptive to various screen sizes and devices. By separating content (HTML) from presentation (CSS), web development becomes more modular and maintainable. In essence, CSS is the stylistic orchestrator of the web, shaping user experiences and bringing design visions to life.</p>
+          <a href="./css.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">CSS Study Guide</a>
+      </section>
+      <!-- ID is a selector that is unique to one element-->
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
@@ -42,16 +144,25 @@
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
-        <ul>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
-        </ul>
+        <p>
+          JavaScript stands as the dynamic powerhouse behind interactive and responsive web experiences in frontend development. While HTML provides the structure and CSS determines the presentation, it is JavaScript that introduces behavior, interactivity, and real-time functionality to web pages. From simple animations and form validations to complex single-page applications and real-time data rendering, JavaScript empowers developers to make web content respond to user actions, communicate with servers, and even manipulate the Document Object Model (DOM) on the fly. Integrated natively in all major web browsers, it bridges the gap between static content and user-driven interactions. Ultimately, JavaScript breathes life into frontend development, transforming static web pages into dynamic, interactive, and immersive web applications.
+        </p>
+        <!--document.write-->
+        <a href="./javascript.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Javascript Study Guide</a>
+        <script>
+          //window.alert(5 + 6);
+          </script>
+          <script>
+            console.log(5 + 6);
+            </script>
       </section>
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <!--tag is used to embed a client-side script (JavaScript)-->
     <script src="./assets/script.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
